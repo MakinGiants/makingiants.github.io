@@ -24,14 +24,19 @@ $silver: #ddd;
 $grey:   #aaa;
 $black:  #111;
 
+// Material Colors
+$mat_indigo_500: #3F51B5;
+$mat_indigo_700: #303F9F;
+$mat_indigo_900: #1A237E;
+
 // Color variables
-$primary-color: seagreen;
-$secondary-color: #233E5B;
-$tertiary-color: #aaa;
+$primary-color: mat_indigo_500;
+$secondary-color: #mat_indigo_500;
+$tertiary-color: #mat_indigo_900;
 $link-color: $primary-color;
 
 $bad-color: $red; // Bad color for errors, validation etc.
-$good-color: $green; // Good color for success etc.
+$good-color: $primary-color; // Good color for success etc.
 $info-color: $blue; // Good color for success etc.
 $warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text
