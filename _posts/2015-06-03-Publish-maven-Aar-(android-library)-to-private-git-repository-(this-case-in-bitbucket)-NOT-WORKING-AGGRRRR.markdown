@@ -6,6 +6,7 @@ updated: 2015-06-11 15:00:07 UTC
 comments: false
 categories: 
 ---
+
 You will need 2 repositories:
 1. Library code
 2. Maven (where the compiled library will stay and other projects will get)
