@@ -1,4 +1,4 @@
-![](/preview.jpg)
+![](/header.jpg)
 
 Site for MakinGIANTS projects.
 
