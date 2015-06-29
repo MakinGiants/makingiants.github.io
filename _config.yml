@@ -18,8 +18,8 @@ navigation:
  - title: Awesome Mobile
    url: /awesome_mobile
 
-gems:
-  - jemoji
+#gems:
+# - jemoji
 
 social:
    github: makingiants
