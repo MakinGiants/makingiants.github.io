@@ -15,6 +15,11 @@ navigation:
    url: /index.html
  - title: Our Android Apps
    url: https://play.google.com/store/search?q=makingiants 
+ - title: Awesome Mobile
+   url: /awesome_mobile
+
+gems:
+  - jemoji
 
 social:
    github: makingiants
