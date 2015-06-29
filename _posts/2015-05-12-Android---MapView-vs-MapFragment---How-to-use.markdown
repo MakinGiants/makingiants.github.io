@@ -9,10 +9,11 @@ categories: Android
 
 When you should use `MapFragment` or `MapView`? 
 
-#[MapFragment](http://developer.android.com/reference/com/google/android/gms/maps/MapFragment.html)
+## [MapFragment](http://developer.android.com/reference/com/google/android/gms/maps/MapFragment.html)
 
 * Use it if you want to add a map into Activity class (not fragment because it will create a nested fragment and it´s a mess).
 * Use SupportMapFragment if you want to support just android versions lower than v12.
 
-#MapView
+## [MapView](https://developers.google.com/android/reference/com/google/android/gms/maps/MapView)
+
 * Use it if you are going to add a map into a fragment. (you need to update each lifecicle to MapView).
