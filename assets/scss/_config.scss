@@ -25,14 +25,14 @@ $grey:   #aaa;
 $black:  #111;
 
 // Material Colors
-$mat_indigo_500: #3F51B5;
-$mat_indigo_700: #303F9F;
-$mat_indigo_900: #1A237E;
+$mat_blue_500: #2196F3;
+$mat_blue_700: #1976D2;
+$mat_blue_900: #0D47A1;
 
 // Color variables
-$primary-color: mat_indigo_500;
-$secondary-color: #mat_indigo_500;
-$tertiary-color: #mat_indigo_900;
+$primary-color: $mat_blue_500;
+$secondary-color: $mat_blue_500;
+$tertiary-color: $mat_blue_900;
 $link-color: $primary-color;
 
 $bad-color: $red; // Bad color for errors, validation etc.

@@ -18,8 +18,9 @@ navigation:
  - title: Awesome Mobile
    url: /awesome_mobile
 
-#gems:
-# - jemoji
+gems:
+ - emoji_for_jekyll
+ - jekyll-compass
 
 social:
    github: makingiants
