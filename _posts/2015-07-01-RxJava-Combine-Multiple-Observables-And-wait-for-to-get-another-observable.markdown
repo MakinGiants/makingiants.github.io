@@ -66,4 +66,5 @@ private static Observable<Order> create(OrderService.NewOrder newOrder) {
 
 {% endhighlight %}
 
+Thanks to [lukaciko](http://stackoverflow.com/users/971273/lukaciko).
 Check this [question on stackoverflow](http://stackoverflow.com/questions/31170677/rxjava-android-observable-result-needed-to-create-another-observable).
