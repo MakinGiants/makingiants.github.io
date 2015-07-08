@@ -94,6 +94,7 @@ DEPENDENCIES
   emoji_for_jekyll
   jekyll
   jekyll-compass
+  jekyll-gist
   normalize-scss
   redcarpet
   susy
