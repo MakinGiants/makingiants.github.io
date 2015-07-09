@@ -2,6 +2,7 @@
 layout: post
 title: "iOS - Swift - Show image picker for gallery/camera"
 date: "2015-07-08"
+categories: iOS Swift
 ---
 
 Sample code:

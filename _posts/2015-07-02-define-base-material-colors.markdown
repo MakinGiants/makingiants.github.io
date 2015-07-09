@@ -2,6 +2,7 @@
 layout: post
 title: "Define base material colors"
 date: "2015-07-02"
+categories: Android 
 ---
 
 Just wanted to repost a [cool post](https://plus.google.com/+AndroidDevelopers/posts/AV2ooBWY1iy)
