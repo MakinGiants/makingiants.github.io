@@ -2,6 +2,7 @@
 layout: post
 title: "Mock Retrofit service using MockRestAdapter and Espresso 2.0 (No Mockito)"
 date: "2015-07-02"
+categories: Android Espresso Retrofit
 ---
 
 I will not use mockito because it give me so much errors, when we will use
@@ -65,7 +66,7 @@ public class MockOrderService implements OrderService {
         mockOrderService.mOrder = order;
 
         // Replace the service instance with the mocked one
-        // Then every time that the projec call Order.get will return what we 
+        // Then every time that the projec call Order.get will return what we
         // had in our MockOrderService.get() code
         Order.SERVICE = mockRestAdapter.create(OrderService.class, mockOrderService);
     }
