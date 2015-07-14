@@ -47,6 +47,7 @@ public interface OrderService {
 {% endhighlight %}
 
 2. A mock service that returns what we want (`MockedOrderService`).
+
 {% highlight java %}
 public class MockOrderService implements OrderService {
 
