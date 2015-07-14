@@ -20,7 +20,7 @@ androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.2'){
 
 And use the proguard file:
 
-{% highlight proguard %}
+{% highlight %}
 
 # Assertj
 -dontwarn org.assertj.core.**
