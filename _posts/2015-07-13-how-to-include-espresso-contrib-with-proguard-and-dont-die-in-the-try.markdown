@@ -6,6 +6,8 @@ date: "2015-07-13"
 
 There are some conflicts on espresso dependencies so just include `com.android.support.test.espresso:espresso-contrib:2.2` with some excludes.
 
+
+
 {% highlight groovy %}
 androidTestCompile 'com.android.support.test:runner:0.3'
 androidTestCompile 'com.android.support.test:rules:0.3'
@@ -20,7 +22,7 @@ androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.2'){
 
 And use the proguard file:
 
-{% highlight %}
+{% highlight groovy %}
 
 # Assertj
 -dontwarn org.assertj.core.**
