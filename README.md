@@ -1,4 +1,4 @@
--![](/header.jpg)
+-![](img/header.jpg)
 -
 -Site for MakinGIANTS projects.
 -
