@@ -1,25 +1,283 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Material UI One Page Theme</title>
 
-<div class="home" id="home">
-  <h1 class="pageTitle">Recent Posts</h1>
-  <ul class="posts noList">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
-      </li>
-    {% endfor %}
-  </ul>
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
-    {% endif %}
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
-    {% endif %}
-  </div>
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
 </div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">MakinGIANTS</a>
+            <ul id="nav-mobile" class="right side-nav">
+                <li><a href="#intro">Service</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="http://www.makingiants.com/blog">Blog</a></li>
+            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            <span>We Love</span> 
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">creating</b>
+                <b>designing</b>
+                <b>developing</b>
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+                <h2 class="center header text_h2"> We focus our time developing  <span class="span_h2"> "unsucessfull"  </span>ideas that solve <span class="span_h2"> needs.</span </h2>
+            </div>
+
+            <div  class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-image-flash-on"></i>
+                    <h5 class="promo-caption">Faaaaaaast</h5>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-social-group"></i>
+                    <h5 class="promo-caption">Open Source Projects</h5>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-desktop-windows"></i>
+                    <h5 class="promo-caption">Open Source Projects (2 times)</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Work </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project1.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Answer-it<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://play.google.com/store/apps/details?id=com.makingiants.answerit">Google play</a></p>
+                        <p><a href="https://github.com/MakinGiants/LiveView-Answer-it">Github</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Answer-it<i class="mdi-navigation-close right"></i></span>
+                        <p>This is a plugin for the LiveView device (a "smartwatch" for Android). Sometimes you need to reject a call or you didn't know that the call was rejected. Select a missed call and a message and send it without geting out of your pocket the phone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project2.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Tell-it<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://play.google.com/store/apps/details?id=com.makingiants.tellit">Google play</a></p>
+                        <p><a href="https://github.com/MakinGiants/LiveView-Tell-it">Github</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Tell-it<i class="mdi-navigation-close right"></i></span>
+                        <p>This is a plugin for the LiveView device (a "smartwatch" for Android). Sometimes you need to send messages to your favorites contacts... and that messages sometimes are like "I will go now", "I'm here, ¿where are you?".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project3.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Funny Sounds<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://play.google.com/store/apps/details?id=com.makingiants.liveview.funny">Google play</a></p>
+                        <p><a href="https://github.com/MakinGiants/LiveView-Funny-Plugin">Github</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Funny Sounds<i class="mdi-navigation-close right"></i></span>
+                        <p>This is a plugin for the LiveView device (a "smartwatch" for Android). Play sounds from your LiveView smartwatch.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project4.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Banjen - Banjo tunner<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="https://play.google.com/store/apps/details?id=com.makingiants.android.banjotuner">Google play</a></p>
+                        <p><a href="https://github.com/MakinGiants/android_banjo_tuner">Github</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Banjen - Banjo tunner<i class="mdi-navigation-close right"></i></span>
+                        <p>Tune in an old-fashion way your Brazilian banjo or cavaquinho with true sounds!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax1.png"></div>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="team">
+    <div class="container">
+        <h2 class="header text_b"> Our Team </h2>
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/avatar1.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Daniel Gomez Rico<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">DEVELOPER</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="https://twitter.com/dgomezri">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://plus.google.com/+DanielG%C3%B3mezRico">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://co.linkedin.com/in/danielgomezrico">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/avatar3.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Juan Luis Acosta<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Designer</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="https://plus.google.com/117975106686605770893/">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://co.linkedin.com/pub/juan-luis-acosta/55/bb2/a97/en">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email-id</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">makingiants.com</h5>
+                <ul>
+                    <li><a class="white-text" href="http://www.makingiants.com/">Home</a></li>
+                    <li><a class="white-text" href="http://www.makingiants.com/blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="https://play.google.com/store/apps/developer?id=MakinGIANTS">
+                            <i class="small fa fa-link white-text"></i> Google Play
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://github.com/makingiants">
+                            <i class="small fa fa-github-square white-text"></i> Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Theme Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+        </div>
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    </body>
+</html>
